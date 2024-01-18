@@ -1,6 +1,6 @@
 package reel
 
-import "github.com/12yanogden/cli/colors"
+import "github.com/12yanogden/colors"
 
 type Reel struct {
 	Index  int

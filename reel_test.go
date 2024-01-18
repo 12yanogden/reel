@@ -3,7 +3,7 @@ package reel
 import (
 	"testing"
 
-	"github.com/12yanogden/intslices"
+	"github.com/12yanogden/slices"
 )
 
 func TestReel(t *testing.T) {
@@ -32,7 +32,7 @@ func TestReel(t *testing.T) {
 
 	reel.Init(frames, 10)
 
-	for range intslices.Seq(0, len(frames)-1) {
+	for range slices.Indexes(frames) {
 		actual += reel.Play()
 	}
 

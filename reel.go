@@ -25,8 +25,8 @@ func (r *Reel) Play() string {
 }
 
 func (r *Reel) padFrames() {
-	for i := range (*r).Frames {
-		colors.Left(&(*r).Frames[i], &(*r).Width)
+	for i := range r.Frames {
+		colors.Left(&r.Frames[i], &r.Width)
 	}
 }
 
